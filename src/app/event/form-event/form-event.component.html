@@ -1,0 +1,11 @@
+<p>form-event works!</p>
+
+<div>
+    <form #creerEvent="ngForm" (ngSubmit)="createEvent(creerEvent.value)">
+        
+        <input type="text" name="titre" placeholder="entrer le titre" ngModel="">
+        <input type="text" name="description" placeholder="entrer la description" ngModel="">
+        <input type="date" name="dateEvent" ngModel="">
+        <button class="btn btn-secondary" type="submit"> Valider</button>
+    </form>
+</div>
